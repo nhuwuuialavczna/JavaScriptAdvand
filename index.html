@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="boostrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="reset.css" >
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="boostrap/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JSTutorial/basic/json.js"></script>
+    <script>
+        $(document).ready(function () {
+           $.ajax({
+               url:'example/OOP.js',
+               type: "GET",
+               contentType: "utf-8",
+               success:function (data) {
+                   alert(data);
+               },
+               error:function () {
+                   alert('loi');
+               }
+           });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <form action="JSTutorial/basic/OOP.js" method="get">
+            <input type="text" value="hau">
+            <input type="submit" value="Gui">
+        </form>
+    </div>
+</body>
+</html>

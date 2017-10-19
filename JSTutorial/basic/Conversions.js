@@ -1,0 +1,17 @@
+// var x = 2 + 2 + '2';
+// var x = 2 + true;
+// var x = 2 + true +'2';
+// var x = true +'2';
+// var x = Number('2');
+// var x = Boolean(1);
+// var x = Boolean(0);
+// var x  = Boolean('hello');
+// var x = Boolean(null);
+// var x = '';
+// var x = Boolean('');
+// var x = Boolean([]);
+// var x;
+var a;
+var x = Boolean(a);
+console.log(x);
+console.log(typeof x);
